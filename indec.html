@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Instagram Page</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .post {
+            width: 350px;
+            background-color: #1c1c1c;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .post:hover {
+            transform: scale(1.05);
+        }
+        iframe {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test</h1>
+    <div class="container">
+        <div class="post">
+            <iframe src="https://www.instagram.com/p/DFUUvHoh4B2/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="post">
+            <iframe src="https://www.instagram.com/p/DE6ptVBhT9q/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="post">
+            <iframe src="https://www.instagram.com/p/DEzaqC5BgFB/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="post">
+            <iframe src="https://www.instagram.com/p/DFMeVboB5ai/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+    </div>
+</body>
+</html>
