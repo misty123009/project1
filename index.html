@@ -3,67 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAND SITA</title>
+    <title>SitaHub - Devotional Videos</title>
     <style>
+        /* General Styles */
         body {
-            background-color: #0d0d0d;
-            color: #ffffff;
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #181818;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
         }
-        h1 {
-            font-size: 2.5em;
-            margin: 20px 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            background: linear-gradient(45deg, #ffd700, #ffae00);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .post {
-            width: 90%;
-            max-width: 400px;
-            background-color: #1c1c1c;
+
+        /* Navbar */
+        .navbar {
+            background-color: black;
             padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        .post:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
         }
-        iframe {
+        .logo span {
+            color: orange;
+        }
+        .nav-buttons a {
+            text-decoration: none;
+            color: white;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        /* Video Section */
+        .video-container {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        video {
             width: 100%;
-            height: 500px;
-            border-radius: 10px;
+            border-radius: 8px;
         }
+        .video-title {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>SITA CHUDAI CENTER</h1>
-    <div class="container">
-        <div class="post">
-            <iframe src="https://www.instagram.com/p/DFUUvHoh4B2/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        </div>
-        <div class="post">
-            <iframe src="https://www.instagram.com/p/DE6ptVBhT9q/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        </div>
-        <div class="post">
-            <iframe src="https://www.instagram.com/p/DEzaqC5BgFB/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-        </div>
-        <div class="post">
-            <iframe src="https://www.instagram.com/p/DFMeVboB5ai/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Sita<span>Hub</span></div>
+        <div class="nav-buttons">
+            <a href="#">Home</a>
+            <a href="#">Trending</a>
+            <a href="#">About</a>
         </div>
     </div>
+
+    <!-- Video Player -->
+    <div class="video-container">
+        <video controls>
+            <source src="sita.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-title">Sita Bhajan - Devotional Video</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 SitaHub. All Rights Reserved.</p>
+    </div>
+
 </body>
 </html>
